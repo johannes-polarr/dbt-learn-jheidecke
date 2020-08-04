@@ -3969,3 +3969,15 @@ Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
 2020-08-04 09:00:33.467700 (Thread-3): handling status request
 2020-08-04 09:00:33.469521 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd5df555d-6589-4da6-b000-15954eeb08a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a4f7a5c0>]}
 2020-08-04 09:00:33.473402 (Thread-3): sending response (<Response 9818 bytes [200 OK]>) to 10.0.1.144
+2020-08-04 09:00:42.448968 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-08-04 09:00:42.449126 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 09:00:42.463853 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-08-04 09:00:42.464024 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 09:00:42.478720 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-08-04 09:00:42.478856 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 09:00:42.869058 (Thread-5): handling status request
+2020-08-04 09:00:42.869584 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd5df555d-6589-4da6-b000-15954eeb08a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a4bafc18>]}
+2020-08-04 09:00:42.870972 (Thread-5): sending response (<Response 1910 bytes [200 OK]>) to 10.0.41.165
+2020-08-04 09:01:10.410712 (Thread-6): handling status request
+2020-08-04 09:01:10.412689 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd5df555d-6589-4da6-b000-15954eeb08a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a4baf6d8>]}
+2020-08-04 09:01:10.414989 (Thread-6): sending response (<Response 1910 bytes [200 OK]>) to 10.0.41.165
