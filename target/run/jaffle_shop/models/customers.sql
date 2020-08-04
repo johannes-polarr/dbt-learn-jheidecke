@@ -1,17 +1,17 @@
 
-  create or replace  view ANALYTICS.dbt_jheidecke.customers  as (
+  create or replace  view ANALYTICS.dbt_kcoapman.customers  as (
     
 
 
 with customers as (
 
-    select * from ANALYTICS.dbt_jheidecke.stg_customers
+    select * from ANALYTICS.dbt_kcoapman.stg_customers
 
 ),
 
 orders as (
 
-    select * from ANALYTICS.dbt_jheidecke.stg_orders
+    select * from ANALYTICS.dbt_kcoapman.stg_orders
 
 ),
 
