@@ -4593,3 +4593,76 @@ Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
 2020-08-04 09:01:10.412689 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd5df555d-6589-4da6-b000-15954eeb08a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a4baf6d8>]}
 2020-08-04 09:01:10.414989 (Thread-6): sending response (<Response 1910 bytes [200 OK]>) to 10.0.41.165
 >>>>>>> 618690e96919aa32d80e1322267b00345fae386f
+2020-08-04 12:17:33.451796 (MainThread): Done resetting log handlers.
+2020-08-04 12:17:33.451825 (MainThread): Received response from rpc task.
+2020-08-04 12:17:33.451847 (MainThread): Updating status to Paused
+2020-08-04 12:18:12.046603 (MainThread): Caught sighup
+2020-08-04 12:18:12.495018 (MainThread): Updating status to Ready
+2020-08-04 12:18:12.502533 (MainThread): Kicking off rpc task.
+2020-08-04 12:18:12.502592 (MainThread): dbt client called with ['--partial-parse', 'rpc', '--profile', 'user']
+2020-08-04 12:18:12.504440 (MainThread): Setting up log handlers...
+2020-08-04 12:18:12.513491 (MainThread): Running with dbt=0.17.0
+2020-08-04 12:18:12.543653 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2020-08-04 12:18:12.564222 (MainThread): Tracking: tracking
+2020-08-04 12:18:12.564409 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7ff16400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7ff16438>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7ff355c0>]}
+2020-08-04 12:18:12.564635 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=13
+2020-08-04 12:18:12.565096 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2020-08-04 12:18:12.565430 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2020-08-04 12:18:12.567235 (Thread-4): Parsing macros/core.sql
+2020-08-04 12:18:12.571237 (Thread-4): Parsing macros/materializations/helpers.sql
+2020-08-04 12:18:12.579443 (Thread-4): Parsing macros/materializations/common/merge.sql
+2020-08-04 12:18:12.594061 (Thread-4): Parsing macros/materializations/table/table.sql
+2020-08-04 12:18:12.601173 (Thread-4): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-04 12:18:12.606273 (Thread-4): Parsing macros/materializations/view/view.sql
+2020-08-04 12:18:12.612919 (Thread-4): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-04 12:18:12.643007 (Thread-4): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-04 12:18:12.661960 (Thread-4): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-04 12:18:12.663795 (Thread-4): Parsing macros/materializations/seed/seed.sql
+2020-08-04 12:18:12.686239 (Thread-4): Parsing macros/materializations/incremental/incremental.sql
+2020-08-04 12:18:12.693312 (Thread-4): Parsing macros/materializations/incremental/helpers.sql
+2020-08-04 12:18:12.695389 (Thread-4): Parsing macros/etc/query.sql
+2020-08-04 12:18:12.696541 (Thread-4): Parsing macros/etc/get_custom_schema.sql
+2020-08-04 12:18:12.698833 (Thread-4): Parsing macros/etc/get_custom_alias.sql
+2020-08-04 12:18:12.699892 (Thread-4): Parsing macros/etc/datetime.sql
+2020-08-04 12:18:12.709923 (Thread-4): Parsing macros/etc/get_custom_database.sql
+2020-08-04 12:18:12.711738 (Thread-4): Parsing macros/etc/is_incremental.sql
+2020-08-04 12:18:12.713602 (Thread-4): Parsing macros/adapters/common.sql
+2020-08-04 12:18:12.765357 (Thread-4): Parsing macros/schema_tests/relationships.sql
+2020-08-04 12:18:12.766721 (Thread-4): Parsing macros/schema_tests/unique.sql
+2020-08-04 12:18:12.767923 (Thread-4): Parsing macros/schema_tests/accepted_values.sql
+2020-08-04 12:18:12.770077 (Thread-4): Parsing macros/schema_tests/not_null.sql
+2020-08-04 12:18:12.771375 (Thread-4): Parsing macros/adapters.sql
+2020-08-04 12:18:12.794331 (Thread-4): Parsing macros/catalog.sql
+2020-08-04 12:18:12.796244 (Thread-4): Parsing macros/materializations/incremental.sql
+2020-08-04 12:18:12.805509 (Thread-4): Parsing macros/materializations/merge.sql
+2020-08-04 12:18:12.807590 (Thread-4): Parsing macros/materializations/table.sql
+2020-08-04 12:18:12.811174 (Thread-4): Parsing macros/materializations/view.sql
+2020-08-04 12:18:12.874691 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-08-04 12:18:12.874806 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 12:18:12.890492 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.testing".
+2020-08-04 12:18:12.890628 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 12:18:12.908243 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-08-04 12:18:12.908388 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 12:18:12.923637 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-08-04 12:18:12.923756 (Thread-4): Opening a new connection, currently in state init
+2020-08-04 12:18:13.452784 (Thread-5): handling status request
+2020-08-04 12:18:13.453322 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '93255b75-2118-4b7f-a7fc-af1ab6a7ae19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7fcc2e10>]}
+2020-08-04 12:18:13.457629 (Thread-5): sending response (<Response 10392 bytes [200 OK]>) to 10.0.21.243
+2020-08-04 12:18:17.663168 (Thread-6): For key jaffle_shop, hash mismatch (FileHash(name='sha256', checksum='b82bd82ae4d6a0c2725ffc6f06fa4ecd0e1fef93b7d9fe2ad1a9cec188cf649a') -> FileHash(name='sha256', checksum='63a1e2876cd90edfc84a0140afa502d2a75bcc1406ef5b49167f1472db353748')), cache invalidated
+2020-08-04 12:18:17.707506 (Thread-6): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-08-04 12:18:17.707631 (Thread-6): Opening a new connection, currently in state init
+2020-08-04 12:18:17.724914 (Thread-6): Acquiring new snowflake connection "model.jaffle_shop.testing".
+2020-08-04 12:18:17.725035 (Thread-6): Opening a new connection, currently in state init
+2020-08-04 12:18:17.740202 (Thread-6): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-08-04 12:18:17.740313 (Thread-6): Opening a new connection, currently in state init
+2020-08-04 12:18:17.754250 (Thread-6): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-08-04 12:18:17.754351 (Thread-6): Opening a new connection, currently in state init
+2020-08-04 12:18:17.924513 (Thread-7): handling status request
+2020-08-04 12:18:17.940244 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '93255b75-2118-4b7f-a7fc-af1ab6a7ae19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7fc0a7b8>]}
+2020-08-04 12:18:17.944869 (Thread-7): sending response (<Response 183 bytes [200 OK]>) to 10.0.8.195
+2020-08-04 12:18:19.361059 (Thread-8): handling status request
+2020-08-04 12:18:19.361571 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '93255b75-2118-4b7f-a7fc-af1ab6a7ae19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7f3e4780>]}
+2020-08-04 12:18:19.363363 (Thread-8): sending response (<Response 2974 bytes [200 OK]>) to 10.0.31.94
+2020-08-04 12:18:40.164608 (Thread-9): handling status request
+2020-08-04 12:18:40.166600 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '93255b75-2118-4b7f-a7fc-af1ab6a7ae19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e7fc07ba8>]}
+2020-08-04 12:18:40.168352 (Thread-9): sending response (<Response 2974 bytes [200 OK]>) to 10.0.21.102

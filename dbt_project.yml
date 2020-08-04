@@ -4,11 +4,8 @@
 # name or the intended use of these models
 name: 'jaffle_shop'
 version: '1.0.0'
-<<<<<<< HEAD
-=======
 config-version: 2
 require-dbt-version: "=0.17.0"
->>>>>>> 618690e96919aa32d80e1322267b00345fae386f
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
